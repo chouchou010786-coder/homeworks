@@ -1,0 +1,39 @@
+/* My first CSS comment */
+h1, li {
+   color:rgb(22, 6, 255);
+}
+h2{
+   color: rgb(249, 195, 0)
+}
+.info-red {
+   color:rgb(195, 31, 2);
+}
+
+.first-item{
+   color:blueviolet;
+}
+.link {
+   color:aqua;
+}
+p.small-text {
+   color:rgba(255, 7, 7, 0.684);
+}
+#independence {
+   color:rgb(255, 14, 14);
+}
+.part-one p{
+   color:green;
+}
+.part-two p{
+   color:rgb(214, 74, 242);
+}
+.part-three p {
+   color:rgb(54, 10, 143);
+}
+
+p.first-item {
+   color: blueviolet;
+}
+p.small-text {
+   color: rgba(83, 0, 0, 0.675);
+}
