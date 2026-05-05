@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson 5</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM%20Sans:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="top">
+  <h1 class="title">CSS Властивості блоків - padding and margin</h1>
+</header>
+<main>
+  <p class="description">Padding - це СSS властивість, що задає відступ від кордонів HTML-тегу до його контенту, це внутрішній відступ. Не може мати від'ємне значення та записується за допомогою одиниць виміру, наприклад: 10px, 50%.</p>
+  <div class="padding">
+    <div class="block1">
+     Блок, що має padding 20px з усіх боків.
+    </div>
+     <div class="block2">
+     Блок, що має padding 30px зверху-знизу, та 50px - зліва-справа. 
+    </div>
+     <div class="block3">
+     Блок, що має padding 10px зверху, 50px - справа-зліва та 40px - знизу.
+    </div>
+      <div class="block4">
+     Блок, що має padding 50px зверху, 20px - справа, 30px - знизу та 40px зліва.
+    </div>
+     <div class="block5">
+     Блок, що має padding 5% від ширини батьківського елементу.
+    </div>
+      <div class="block6">
+     Блок, що має padding-left 20px. 
+    </div>
+  </div>
+  <span class="inline">
+    На рядкові обʼєкти відступ padding у більшості випадків не задаються, тому що вони поводяться непередбачувано/некоректно. На прикладі, span з padding-left 20 px. На рядкові обʼєкти відступ padding у більшості випадків не задаються, тому що вони поводяться непередбачувано/некоректно. На прикладі, span з padding-left 20 px. На рядкові обʼєкти відступ padding у більшості випадків не задаються, тому що вони поводяться непередбачувано/некоректно. На прикладі, span з padding-left 20 px. На рядкові обʼєкти відступ padding у більшості випадків не задаються, тому що вони поводяться непередбачувано/некоректно. На прикладі, span з padding-left 20 px. 
+  </span>
+  <img src="img/girl_in_the_pool.jpg" alt="A smiling girl enjoys the pool while riding a blue inflatable peacock toy" class="inline-block">
+   <p class="description">Margin - це зовнішній відступ від кордонів обʼєкту до навколишнього середовища (до інших обʼєктів, до браузера). Головні особливості - значення можуть бути від’ємними, і для них спрацьовує ефект "схлопування", згортання чи колапсу.</p>
+   <div class="margin">
+    <div class="block7">
+      Цей блок має margin 20px для усіх сторін. 
+    </div>
+     <div class="block8">
+      Цей блок має margin 20px знизу-зверху, та 30px - справа-зліва. 
+    </div>
+      <div class="block9">
+      Цей блок має margin з від'ємним значенням -10px.
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque unde sed ab aliquam consequatur nulla voluptatibus dolor mollitia sequi voluptatem, aperiam laboriosam obcaecati perspiciatis? Itaque omnis ut facilis corrupti suscipit!</p>
+    <p class="description">Ефект cхлопування (колапсу) - це коли margin-top i margin-bottom накладаються один на одного. Тобто браузер показує обидва відступи, але відступ із меншим значенням "розчиняється" у відступі з більшим значенням. Як наслідок, у браузері ми побачимо відступ із більшим значенням. Щоб уникнути подібного, прийнято задавати тільки margin-bottom.
+    </p>
+    <div class="collapse1">Ефект колапсу - цей блок має margin-bottom 50px.</div>
+     <div class="collapse2">Ефект колапсу - цей блок має margin-top 30px.</div>
+   </div>
+   <div class="width">
+    <p class="description">
+      Значення width - це ширина блочного або блочно-рядкового обʼєкту. Може задаватися у px або у відсотках. 
+    </p>
+    <div class="block10"><mark>Цей блок із width 500px.</mark> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis consequuntur eligendi ab sint, maiores dolorum ea cumque consectetur commodi. Sed nam unde beatae porro non eum earum eligendi veritatis!</div>
+    <div class="block11"><mark>Цей блок із max-width 600px.</mark> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, facere error tenetur voluptatem odio molestiae! Deleniti, cum? Vel inventore recusandae unde esse optio voluptates temporibus rem nam. Aperiam, quis ex!</div>
+    <div class="block12"><mark>Цей блок із min-width 400px</mark>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum alias, harum dolore molestiae animi magnam, ab aperiam obcaecati vero nam voluptate minima, eius qui delectus error veniam voluptatem libero.</div>
+    <div class="block13"><mark>Цей блок з width у відсотках</mark>, він займає 50% від ширини батьківського елементу.</div>
+   </div>
+   <div class="height">
+    <p class="description">Значення height встановлює висоту блочним та блочно-рядковим об'єктам. Найчастіше встановлюється в px, адже встановлення у % має багато нюансів.</p>
+    <div class="block14"><mark>Цей блок має задану висоту height 50px.</mark> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nesciunt sapiente, et iste illo voluptatum molestiae! Repellat modi, corporis similique quis quo culpa quibusdam reiciendis accusantium eaque debitis, impedit obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, illo aspernatur veritatis minima laudantium earum magnam vitae, quasi delectus repellendus, cum architecto quisquam explicabo excepturi odit maiores provident fuga hic.</div>
+    <div class="block15"><mark>Цей блок має задану мінімальну висоту 30px.</mark> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi pariatur at fuga illo quis dolores et officiis quidem illum explicabo, quisquam labore soluta, aut ducimus, quibusdam error rem. Ex, dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda inventore laudantium, fuga asperiores eveniet! Praesentium, dicta temporibus. Laudantium recusandae ipsa vitae exercitationem autem cumque quam voluptatibus rem, dolor minus.</div>
+    <div class="block16"><mark>Цей блок має задану максимальну висоту 60px.</mark> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime possimus expedita est? Facilis quidem corporis alias, fuga nemo, voluptatem, a obcaecati praesentium id nam recusandae inventore error hic perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ut nisi eius voluptas iure, temporibus aspernatur nam minus alias velit dolore sit officia expedita, rem quisquam recusandae ipsum. Blanditiis, fugit!</div>
+   </div>
+   <div class="new"> <mark>Дивилася, як працює box-sizing: border-box.</mark> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus blanditiis nobis incidunt nihil quasi minus reiciendis maxime, quia, assumenda quidem magni. Nam qui magnam facere quis fuga, quisquam cumque!</div>
+   <div class="overflow">
+     <p class="description">Властивість overflow керує відображенням контенту блоку. Властивість не успадковується. Має наступні значення: visible (за замовченням), hidden, clip, scroll та auto.</p>
+    <div class="hidden"><mark>Цей блок має властивість overflow: hidden.</mark> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam nostrum eaque, accusantium quod rerum omnis architecto molestias natus minus maxime dicta. Cumque mollitia inventore dicta possimus doloribus dolorum error nostrum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod facere placeat fugit doloremque rerum illo dicta adipisci illum ex fugiat magni ipsa atque, labore nostrum? Labore aperiam ullam pariatur esse!
+    </div>
+    <div class="clip"><mark>Цей блок має властивість overflow: clip.</mark> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam nostrum eaque, accusantium quod rerum omnis architecto molestias natus minus maxime dicta. Cumque mollitia inventore dicta possimus doloribus dolorum error nostrum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod facere placeat fugit doloremque rerum illo dicta adipisci illum ex fugiat magni ipsa atque, labore nostrum? Labore aperiam ullam pariatur esse!</div>
+    <div class="scroll"><mark>Цей блок має властивість overflow: scroll.</mark> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam nostrum eaque, accusantium quod rerum omnis architecto molestias natus minus maxime dicta. Cumque mollitia inventore dicta possimus doloribus dolorum error nostrum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod facere placeat fugit doloremque rerum illo dicta adipisci illum ex fugiat magni ipsa atque, labore nostrum? Labore aperiam ullam pariatur esse!</div>
+    <div class="auto"><mark>Цей блок має властивість overflow: auto.</mark> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam nostrum eaque, accusantium quod rerum omnis architecto molestias natus minus maxime dicta. Cumque mollitia inventore dicta possimus doloribus dolorum error nostrum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod facere placeat fugit doloremque rerum illo dicta adipisci illum ex fugiat magni ipsa atque, labore nostrum? Labore aperiam ullam pariatur esse!</div>
+   </div>
+   <div class="display">
+    <p class="description">Властивість display має унікальну можливість змінювати "ДНК" тегу, перетворюючи рядкові елементи на блочні, та навпаки. За замовченням для блочних елементів задано властивість display:block, а для рядкових - display: inline.</p>
+    <span class="inline2">Цей строчний елемент став блочним завдяки властивості display: block. Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque adipisci quia, saepe natus exercitationem deleniti corrupti, quasi minus voluptas quam iusto recusandae! Officiis earum asperiores dolorum adipisci error voluptates.</span>
+   </div>
+   <p class="description">Центрування блоку - використовуємо властивість margin: 0 auto. Але елемент повинен відповідати наступним критеріям: бути блочним, мати ширину меншу, ніж ширина батьківського елементу.</p>
+   <div class="center">Цей блок <mark>відцентровано</mark> за допомогою властивості <mark>margin: 0 auto.</mark> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aut, ullam amet, aperiam expedita, eum in nam minus ipsa quidem minima sunt itaque. Tenetur dignissimos fuga officia voluptatibus molestias ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit architecto amet nostrum sed excepturi praesentium ullam facere. Officia 
+  ratione voluptas sit voluptatibus perspiciatis ipsum, aperiam delectus qui dolorum harum.</div>
+  <p class="description">Домашнє завдання з макету Furniro</p>
+  <div class="project2">
+    <div class="inside">
+      <p class="small-title">New Arrival</p>
+      <p class="title2">Discover Our <br>New Collection</p>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+      <div class="button">BUY Now</div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <a href="#top" class="link">Повернутися до початку</a>
+  </footer>
+</body>
+</html>
